@@ -7,4 +7,5 @@ if [ "$1" = 'php' ] && [ "$(id -u)" = '0' ]; then
     chmod -R 777 /var/www/html/
 fi
 
-exec "$@"
+/usr/local/php/sbin/php-fpm -D
+/usr/local/nginx/sbin/nginx
