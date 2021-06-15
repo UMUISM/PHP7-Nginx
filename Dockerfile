@@ -17,5 +17,5 @@ RUN chmod a+x /usr/local/bin/entrypoint.sh
 
 EXPOSE 80
 
-ENTRYPOINT ["entrypoint.sh"]
-CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
+#ENTRYPOINT ["entrypoint.sh"]
+#CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
